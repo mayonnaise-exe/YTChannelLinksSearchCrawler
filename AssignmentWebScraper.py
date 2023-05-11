@@ -10,7 +10,7 @@ def scrape_google_results():
 
     #There are 100 results per page for google search so we will use the range func. for pages 1-101 
     #(for quick demonstration we will select pages 1&2, can do more it only requires more time and processing power)
-    for page in range(1, 3):
+    for page in range(1, 101):
         #status indicator, to see which page is being scraped line 13
         print(f'Scraping page {page}...')
         response = requests.get(
