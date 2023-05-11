@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 
 #defining the function and introducing api_key and search query to be stored in variables for calling in future
 def scrape_google_results():
-    api_key = 'RAXTUNKNR665UETR2EFL32DGUZMMV4W77LIB3D31J6UTDKBL74BI5PGOYYEF2TQPNBF68JPOLV9BCGVW'
+    api_key = 'RAXTUNKNR665UETR2EFL32DGUZMMV4W77LIB3D31J6UTDKBL74BI5PGOYYEF2TQPNBF68JPOLV9'
     search_query = 'site:youtube.com openinapp.co'
 
     #There are 100 results per page for google search so we will use the range func. for pages 1-101 
@@ -37,8 +37,3 @@ def scrape_google_results():
     print(f'Successfully scraped Google search results to WebCrawlerResults.csv')
 
 scrape_google_results()
-
-
-
-
-
